@@ -1,0 +1,172 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #edecec;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.skip a {
+  position: absolute;
+  top: -80px;
+  left: 10px;
+  background-color: #ffcb05;
+  color: #000000;
+  padding: 8px 10px;
+  border: 2px solid #000000;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip a:focus {
+  top: 10px;
+}
+
+*:focus {
+  outline: 3px dashed #00274c;
+  outline-offset: 2px;
+}
+
+header {
+  background-color: #ffcb05;
+  padding: 12px;
+  border-bottom: 4px solid #00274c;
+}
+
+header img {
+  display: block;
+  width: 50%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto 12px auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #00274c;
+  background-color: #ffffff;
+  color: #00274c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #00274c;
+  color: #ffffff;
+  text-decoration: underline;
+  border: 2px solid #00274c;
+}
+
+nav a.active {
+  background-color: #00274c;
+  color: #ffffff;
+  text-decoration: underline;
+  border: 2px solid #00274c;
+  font-weight: bold;
+}
+
+h1 {
+  color: #00274c;
+  text-align: center;
+  margin: 14px 0 4px 0;
+  font-size: 1.7rem;
+}
+
+h2,
+h3 {
+  color: #00274c;
+  margin-top: 0;
+}
+
+section {
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 8px;
+}
+
+main {
+  padding: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.container > section {
+  grid-column: 1 / -1;
+  background-color: #ffffff;
+  border: 2px solid #00274c;
+  padding: 12px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #00274c;
+}
+
+iframe {
+  width: 100%;
+  display: block;
+  border: 2px solid #00274c;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+a {
+  color: #00274c;
+}
+
+footer {
+  background-color: #00274c;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+}
+
+footer a {
+  color: #ffcb05;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.container > section {
+  grid-column: 2 / 5;
+}
+
+.container > section:first-child {
+  grid-column: 1 / -1;
+}
+
